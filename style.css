@@ -1,0 +1,50 @@
+
+
+.middle {
+  text-align: center;
+  style margin: auto;
+}
+
+body {
+  font-family: 'Krub', sans-serif;
+  background: linear-gradient(yellow, red) fixed;
+  width: 42%;
+  border-radius: : 10px;
+  margin: auto;
+
+}
+
+.button {
+  align-content: center;
+  background-color: orange;
+  border-style: outset;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.animal-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: #ddeaff;
+}
+
+#myTable {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 46%;
+}

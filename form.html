@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input list of things</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <script src="form.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1 class="middle">Zoo Animal Enclosures</h1>
+    <p class="middle">Enter the details of your animal below: </p>
+
+    <form id="new-item-form">
+      <fieldset>
+        <legend><b>Animal details</b></legend>
+          <div id="form-wrapper">
+            <div class="form-item middle">
+              <p>
+                <h2><label for="name" class="primary">Name</label>
+                <input type="text" id="name" required/></h2>
+              </p>
+            </div>
+            <hr>
+            <div class="form-item">
+              <p>
+                <table>
+                  <tr class = middle>
+                    <td>
+                      <img src="images/lion.png" alt="lion">
+                    </td>
+                    <td>
+                      <img src="images/monkey.png" alt="Monkey">
+                    </td>
+                    <td>
+                      <img src="images/panda.png" alt="Panda">
+                    </td>
+                    <td>
+                      <img src="images/tiger.png" alt="Tiger">
+                    </td>
+                    <td>
+                      <img src="images/zebra.png" alt="Zebra">
+                    </td>
+                    <td>
+                      <img src="images/giraffe.png" alt="Giraffe">
+                    </td>
+                  </tr>
+                  <tr class = middle>
+                    <td>
+                      <label for="species" class="primary"></label>
+                      <input type="radio" name="species" id="species" value="Lion"required/>
+                    </td>
+                    <td>
+                      <label for="species" class="primary"></label>
+                      <input type="radio" name="species" id="species" value="Monkey"required/>
+                    </td>
+                    <td
+                      <label for="species" class="primary"></label>
+                      <input type="radio" name="species" id="species" value="Panda"required/>
+                    </td>
+                    <td>
+                      <label for="species" class="primary"></label>
+                      <input type="radio" name="species" id="species" value="Tiger"required/>
+                    </td>
+                    <td>
+                      <label for="species" class="primary"></label>
+                      <input type="radio" name="species" id="species" value="Zebra"required/>
+                    </td>
+                    <td>
+                      <label for="species" class="primary"></label>
+                      <input type="radio" name="species" id="species" value="Giraffe"required/>
+                    </td>
+                  </tr>
+              </table>
+              </p>
+            </div>
+            <hr>
+
+            <div class="form-item middle">
+              <p>
+                <input type="radio" name="gender" value="Male" checked> Male
+                <input type="radio" name="gender" value="Female"> Female
+              </p>
+            </div>
+            <hr>
+
+            <div class="form-item middle">
+              <p>
+                <label for="continent" class="primary">Continent or origin</label>
+                <select id="continent">
+                  <option value="" disabled selected></option>
+                  <option value="Africa">Africa</option>
+                  <option value="Antarctica">Antarctica</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Europe">Europe</option>
+                  <option value="North America">North America</option>
+                  <option value="South America">South America</option>
+                </select>
+              </p>
+              <br>
+              <input class="button middle" style="margin: auto;"  type="submit" value="Add Animal"/>
+            </div>
+          </div>
+      </fieldset>
+    </form>
+
+    <!-- <div id="animal-db" class="middle"> -->
+    <h1 style="text-align: center;">Animal Enclosures</h1>
+      <table id="myTable">
+        <tr>
+          <td>NAME</td>
+          <td>SPECIES</td>
+          <td>GENDER</td>
+          <td>CONTINENT</td>
+        </tr>
+      </table>
+    <!-- </div> -->
+    <br><br><br>
+      <button class="button fixedbutton" id="delete-all">Delete All</button>
+</html>
