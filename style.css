@@ -2,15 +2,15 @@
 
 .middle {
   text-align: center;
-  style margin: auto;
+  margin: 0 auto;
 }
 
 body {
   font-family: 'Krub', sans-serif;
   background: linear-gradient(yellow, red) fixed;
-  width: 42%;
-  border-radius: : 10px;
-  margin: auto;
+  width: 75%;
+  /* border-radius: : 10px; */
+  margin: 0 auto;
 
 }
 
@@ -37,14 +37,8 @@ body {
 }
 
 #myTable {
-  margin: auto;
+  margin: 0 auto;
   width: 75%;
   text-align: center;
   border-bottom: 1px solid #ddd;
-}
-
-.fixedbutton {
-    position: fixed;
-    bottom: 0px;
-    right: 46%;
 }

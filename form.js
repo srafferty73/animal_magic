@@ -10,8 +10,8 @@ const handleNewItemFormSubmit = function (event) {
   event.preventDefault();
 
   const animalDBListItem = createAnimalListItem(event.target);
-  const animalList = document.querySelector('#animal-db');
-  animalList.appendChild(animalDBListItem);
+  // const animalList = document.querySelector('#animal-db');
+  // animalList.appendChild(animalDBListItem);
 
   event.target.reset();
 };
@@ -54,5 +54,8 @@ const createAnimalListItem = function (form) {
 
 const handleDeleteAllClick = function (event) {
   const animalList = document.querySelector('#myTable');
-  animalList.innerHTML = '';
+  // animalList.innerHTML = '';
+  for(var i = 1;i<animalList.rows.length;){
+            animalList.deleteRow(i);
+        };
 }
